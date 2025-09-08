@@ -128,12 +128,13 @@
 					"sid": 319479985782543,
 					"tags": "",
 					"instanceVariables": {
-						"estado": ""
+						"estado": "",
+						"noAr": false
 					},
 					"behaviors": {
 						"8Direções": {
 							"properties": {
-								"max-speed": 100,
+								"max-speed": 200,
 								"acceleration": 1500,
 								"deceleration": 1500,
 								"directions": "dir-8",
@@ -146,6 +147,20 @@
 						"RestritoAoLayout": {
 							"properties": {
 								"bound-by": "edge"
+							}
+						},
+						"Plataforma": {
+							"properties": {
+								"max-speed": 0,
+								"acceleration": 0,
+								"deceleration": 0,
+								"jump-strength": 0,
+								"gravity": 500,
+								"max-fall-speed": 400,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": false
 							}
 						}
 					},

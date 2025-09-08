@@ -44,7 +44,7 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "player",
-									"sid": 510795428610099,
+									"sid": 817766388841135,
 									"parameters": {
 										"instance-variable": "estado",
 										"value": "\"walk\""
@@ -88,120 +88,349 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Caminhar",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Teclado",
-							"sid": 873615197706413,
-							"parameters": {
-								"key": 68
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "player",
-							"sid": 699379287605566,
-							"behaviorType": "8Direções",
-							"parameters": {
-								"control": "right"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 565092503273369,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 691656937282233,
+									"behaviorType": "8Direções",
+									"parameters": {
+										"control": "right"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "player",
+									"sid": 546699770644810,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 423548929312460
 						},
 						{
-							"id": "set-mirrored",
-							"objectClass": "player",
-							"sid": 337849153786652,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						}
-					],
-					"sid": 735695740637694
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Teclado",
-							"sid": 220483287893642,
-							"parameters": {
-								"key": 65
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "player",
-							"sid": 337518545854841,
-							"behaviorType": "8Direções",
-							"parameters": {
-								"control": "left"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 503347865084044,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 853035361544479,
+									"behaviorType": "8Direções",
+									"parameters": {
+										"control": "left"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "player",
+									"sid": 781540835503754,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 129970867822999
 						},
 						{
-							"id": "set-mirrored",
-							"objectClass": "player",
-							"sid": 345486217046391,
-							"parameters": {
-								"state": "mirrored"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 953497122436836,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 814778368080659,
+									"behaviorType": "8Direções",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 491442364940219
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 914611222431331,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 851017874159403,
+									"behaviorType": "8Direções",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 817706528229938
 						}
 					],
-					"sid": 263304451578153
+					"sid": 685092528384025
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "pular",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Teclado",
-							"sid": 700002936755240,
-							"parameters": {
-								"key": 87
-							}
+							"functionName": "pulo_parado",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionCopyPicked": false,
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "player",
+									"sid": 273044703530951,
+									"parameters": {
+										"instance-variable": "estado",
+										"value": "\"jump\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "player",
+									"sid": 503182254544539,
+									"behaviorType": "Plataforma",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-vector-y",
+									"objectClass": "player",
+									"sid": 398161325138351,
+									"behaviorType": "Plataforma",
+									"parameters": {
+										"vector-y": "-200"
+									}
+								}
+							],
+							"sid": 697469188532755
+						},
+						{
+							"functionName": "pulo_movendo",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionCopyPicked": false,
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 320479065332229
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Teclado",
+									"sid": 989789547636467,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 509835602576109,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "player",
+											"sid": 293685200059844,
+											"parameters": {
+												"instance-variable": "noAr"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "player",
+											"sid": 770775242237814,
+											"parameters": {
+												"instance-variable": "noAr",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 205103906149582,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-moving",
+													"objectClass": "player",
+													"sid": 544865207238632,
+													"behaviorType": "8Direções",
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 142285431914154
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-is-down",
+													"objectClass": "Teclado",
+													"sid": 853564107501410,
+													"parameters": {
+														"key": 68
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "pulo_movendo",
+													"sid": 526195574292720
+												}
+											],
+											"sid": 355701309010304
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-is-down",
+													"objectClass": "Teclado",
+													"sid": 285443643024576,
+													"parameters": {
+														"key": 65
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "pulo_movendo",
+													"sid": 817833635036567
+												}
+											],
+											"sid": 982583846476163
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-is-down",
+													"objectClass": "Teclado",
+													"sid": 764105007318442,
+													"parameters": {
+														"key": 87
+													}
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Teclado",
+													"sid": 875956168779034,
+													"parameters": {
+														"key": 83
+													}
+												}
+											],
+											"actions": [],
+											"sid": 388826911322469,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "key-is-down",
+															"objectClass": "Teclado",
+															"sid": 940381670878875,
+															"parameters": {
+																"key": 68
+															},
+															"isInverted": true
+														},
+														{
+															"id": "key-is-down",
+															"objectClass": "Teclado",
+															"sid": 315424488847550,
+															"parameters": {
+																"key": 65
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"callFunction": "pulo_parado",
+															"sid": 376998406900582
+														}
+													],
+													"sid": 917750752337548
+												}
+											],
+											"isOrBlock": true
+										}
+									]
+								}
+							]
 						}
 					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "player",
-							"sid": 831412850954005,
-							"behaviorType": "8Direções",
-							"parameters": {
-								"control": "up"
-							}
-						}
-					],
-					"sid": 830108154641818
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Teclado",
-							"sid": 910237104651102,
-							"parameters": {
-								"key": 83
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "player",
-							"sid": 986924891337237,
-							"behaviorType": "8Direções",
-							"parameters": {
-								"control": "down"
-							}
-						}
-					],
-					"sid": 428159036519451
+					"sid": 912441472530112
 				}
 			],
 			"sid": 833481358759327

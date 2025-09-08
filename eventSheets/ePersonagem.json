@@ -1,0 +1,236 @@
+{
+	"name": "ePersonagem",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Controlador de Animacoes",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 841960006648338
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 854946913160107,
+							"parameters": {
+								"animation": "player.estado",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 218353099936130,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "player",
+									"sid": 813029911058304,
+									"behaviorType": "8Direções"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "player",
+									"sid": 510795428610099,
+									"parameters": {
+										"instance-variable": "estado",
+										"value": "\"walk\""
+									}
+								}
+							],
+							"sid": 195695013616149
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 774382316949918
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "player",
+									"sid": 976064850802021,
+									"parameters": {
+										"instance-variable": "estado",
+										"value": "\"stop\""
+									}
+								}
+							],
+							"sid": 751130849233570
+						}
+					]
+				}
+			],
+			"sid": 788142687144445
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Input Teclado e GamePad",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 873615197706413,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 699379287605566,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "player",
+							"sid": 337849153786652,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 735695740637694
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 220483287893642,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 337518545854841,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "player",
+							"sid": 345486217046391,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 263304451578153
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 700002936755240,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 831412850954005,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 830108154641818
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 910237104651102,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 986924891337237,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 428159036519451
+				}
+			],
+			"sid": 833481358759327
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "player",
+					"sid": 936383720700421,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "370"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "player",
+					"sid": 899166407347477,
+					"parameters": {
+						"y": "370"
+					}
+				}
+			],
+			"sid": 672427697210018
+		}
+	],
+	"sid": 294891175072365
+}

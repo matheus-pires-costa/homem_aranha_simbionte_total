@@ -1,0 +1,10 @@
+{
+	"name": "ePrincipal",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ePersonagem"
+		}
+	],
+	"sid": 553415931297793
+}

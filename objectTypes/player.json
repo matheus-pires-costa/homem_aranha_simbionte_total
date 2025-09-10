@@ -18,6 +18,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 138786061825097
+		},
+		{
+			"name": "sombra",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 690046527013576
 		}
 	],
 	"behaviorTypes": [

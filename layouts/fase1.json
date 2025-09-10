@@ -129,7 +129,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"estado": "",
-						"noAr": false
+						"noAr": false,
+						"sombra": 0
 					},
 					"behaviors": {
 						"8Direções": {

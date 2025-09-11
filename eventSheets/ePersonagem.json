@@ -2,6 +2,46 @@
 	"name": "ePersonagem",
 	"events": [
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 610099097037926
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-x",
+					"objectClass": "ataques_player",
+					"sid": 285137758075550,
+					"parameters": {
+						"x": "1",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "ataques_player",
+					"sid": 400593081754825,
+					"parameters": {
+						"x": "2",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "ataques_player",
+					"sid": 690883608354890,
+					"parameters": {
+						"x": "3",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 207323727553196
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controlador de Animacoes",
@@ -156,6 +196,130 @@
 												{
 													"id": "is-boolean-instance-variable-set",
 													"objectClass": "player",
+													"sid": 507235445701957,
+													"parameters": {
+														"instance-variable": "noAr"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 646940358412974,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-animation-frame",
+															"objectClass": "player_hitboxes",
+															"sid": 544580749169140,
+															"parameters": {
+																"comparison": 0,
+																"number": "1"
+															}
+														},
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 227086743428166
+														}
+													],
+													"actions": [
+														{
+															"id": "set-visible",
+															"objectClass": "player",
+															"sid": 807250098276986,
+															"parameters": {
+																"visibility": "visible"
+															}
+														},
+														{
+															"id": "set-collisions-enabled",
+															"objectClass": "player",
+															"sid": 283219953732196,
+															"parameters": {
+																"collisions": "enabled"
+															}
+														}
+													],
+													"sid": 436488321414933
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 566652119104283
+												}
+											],
+											"actions": [],
+											"sid": 180031564416084,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-animation-frame",
+															"objectClass": "player_hitboxes",
+															"sid": 381959792417754,
+															"parameters": {
+																"comparison": 0,
+																"number": "ataques_player.At(int(right(player_hitboxes.AnimationName,1)))"
+															}
+														},
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 480904075623095
+														}
+													],
+													"actions": [
+														{
+															"id": "set-collisions-enabled",
+															"objectClass": "player_hitboxes",
+															"sid": 396236263152900,
+															"parameters": {
+																"collisions": "enabled"
+															}
+														},
+														{
+															"id": "set-visible",
+															"objectClass": "player_hitboxes",
+															"sid": 648601675397155,
+															"parameters": {
+																"visibility": "visible"
+															}
+														},
+														{
+															"id": "wait",
+															"objectClass": "System",
+															"sid": 250031577519717,
+															"parameters": {
+																"seconds": "0.3",
+																"use-timescale": true
+															}
+														},
+														{
+															"id": "set-visible",
+															"objectClass": "player_hitboxes",
+															"sid": 914298751121526,
+															"parameters": {
+																"visibility": "invisible"
+															}
+														}
+													],
+													"sid": 567050495732561
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "player",
 													"sid": 761166254253263,
 													"parameters": {
 														"instance-variable": "noAr"
@@ -206,72 +370,88 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "player",
-													"sid": 877011902620234,
+													"sid": 209019130718786,
 													"parameters": {
 														"instance-variable": "estado",
-														"value": "\"attack\" & player.combo"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "player",
-													"sid": 647355911915977,
-													"parameters": {
-														"instance-variable": "combo_timer",
-														"value": "1"
+														"value": "\"Attack\" & player.combo"
 													}
 												}
 											],
-											"sid": 457358241995569,
+											"sid": 457358241995569
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 206595220169340,
+													"parameters": {
+														"object-to-create": "player_hitboxes",
+														"layer": "player.LayerName",
+														"x": "player.X",
+														"y": "player.Y",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "player_hitboxes",
+													"sid": 521663292066828,
+													"behaviorType": "Fixar",
+													"parameters": {
+														"pin-to": "player",
+														"x": true,
+														"y": true,
+														"angle": true,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 119813340557648,
+													"parameters": {
+														"seconds": "0",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "player_hitboxes",
+													"sid": 784378616177546,
+													"parameters": {
+														"animation": "player.estado",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 664886040317381,
 											"children": [
 												{
 													"eventType": "block",
 													"conditions": [
 														{
-															"id": "compare-instance-variable",
+															"id": "is-mirrored",
 															"objectClass": "player",
-															"sid": 878357794114231,
-															"parameters": {
-																"instance-variable": "combo",
-																"comparison": 5,
-																"value": "player.combo_maximo"
-															}
+															"sid": 676021117378346
 														}
 													],
 													"actions": [
 														{
-															"id": "set-instvar-value",
-															"objectClass": "player",
-															"sid": 717423714125054,
+															"id": "set-mirrored",
+															"objectClass": "player_hitboxes",
+															"sid": 530391945162529,
 															"parameters": {
-																"instance-variable": "combo",
-																"value": "1"
+																"state": "mirrored"
 															}
 														}
 													],
-													"sid": 944461854815612
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "else",
-															"objectClass": "System",
-															"sid": 371144023686366
-														}
-													],
-													"actions": [
-														{
-															"id": "add-to-instvar",
-															"objectClass": "player",
-															"sid": 181072258072785,
-															"parameters": {
-																"instance-variable": "combo",
-																"value": "1"
-															}
-														}
-													],
-													"sid": 515339018408151
+													"sid": 347500395837736
 												}
 											]
 										}
@@ -380,6 +560,122 @@
 								}
 							],
 							"sid": 480117362122956
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-animation-finished",
+									"objectClass": "player_hitboxes",
+									"sid": 984300128449694
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "player_hitboxes",
+									"sid": 665061574318060
+								}
+							],
+							"sid": 221996097284997,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "player",
+											"sid": 438168008548299,
+											"parameters": {
+												"instance-variable": "acerto",
+												"comparison": 4,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "player",
+											"sid": 758702495985685,
+											"parameters": {
+												"instance-variable": "acerto",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 203730736272202,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "player",
+													"sid": 749067103773610,
+													"parameters": {
+														"instance-variable": "noAr"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 652886566148579,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "player",
+															"sid": 819055046697512,
+															"parameters": {
+																"instance-variable": "combo",
+																"comparison": 5,
+																"value": "player.combo_maximo"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-instvar-value",
+															"objectClass": "player",
+															"sid": 579562344123991,
+															"parameters": {
+																"instance-variable": "combo",
+																"value": "1"
+															}
+														}
+													],
+													"sid": 524398637359302
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 460440500042742
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-instvar",
+															"objectClass": "player",
+															"sid": 218024395514937,
+															"parameters": {
+																"instance-variable": "combo",
+																"value": "1"
+															}
+														}
+													],
+													"sid": 660330320878728
+												}
+											]
+										}
+									]
+								}
+							]
 						}
 					],
 					"sid": 917257888295456
@@ -798,6 +1094,11 @@
 										"instance-variable": "atacando",
 										"value": "false"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "player_hitboxes",
+									"sid": 176554995448723
 								}
 							],
 							"sid": 832013985227376

@@ -135,7 +135,8 @@
 						"atacando": false,
 						"combo": 1,
 						"combo_maximo": 2,
-						"combo_timer": 0
+						"combo_timer": 0,
+						"acerto": 0
 					},
 					"behaviors": {
 						"8Direções": {
@@ -192,6 +193,109 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "player_hitboxes",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Attack1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"sid": 130690478048736,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Fixar": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"effects": {
+						"Brilho": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 130690478048736,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -118.10553045917288,
+						"y": 297.3470475739094,
+						"width": 83.30191067094296,
+						"height": 99.25334037388949,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "inimigo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"sid": 173376881021720,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Senóide": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 0.5,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0.7,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 173376881021720,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 467.632069463557,
+						"y": 353.33742948371287,
+						"width": 74.51676754181227,
+						"height": 115.85169373971496,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 310904181983099,
@@ -229,7 +333,20 @@
 		"subfolders": []
 	},
 	"sid": 761468999262231,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "ataques_player",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 8,
+			"sid": 275169421517346,
+			"tags": "",
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 854,
 	"height": 480,

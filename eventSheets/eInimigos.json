@@ -1,0 +1,49 @@
+{
+	"name": "eInimigos",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "inimigo",
+					"sid": 781672281352661,
+					"parameters": {
+						"object": "player_hitboxes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 585750071156023,
+					"parameters": {
+						"instance-variable": "combo_timer",
+						"value": "1"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "player",
+					"sid": 354808127984491,
+					"parameters": {
+						"instance-variable": "acerto",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "inimigo",
+					"sid": 550980293081719,
+					"behaviorType": "Senóide",
+					"parameters": {
+						"state": "active"
+					}
+				}
+			],
+			"sid": 932379468566260
+		}
+	],
+	"sid": 112421562119373
+}

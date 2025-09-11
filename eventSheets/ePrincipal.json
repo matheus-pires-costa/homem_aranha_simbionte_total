@@ -4,6 +4,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "ePersonagem"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eInimigos"
 		}
 	],
 	"sid": 553415931297793

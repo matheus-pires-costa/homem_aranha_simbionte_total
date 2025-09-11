@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Arr",
+			"name": "Matriz",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -36,6 +43,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Fixar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Plataforma",
 			"author": "Scirra",
@@ -43,8 +57,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Senóide",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "bound",
 			"name": "Restrito ao layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brilho",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -56,7 +84,10 @@
 			"funod2",
 			"player",
 			"Teclado",
-			"Gamepad"
+			"Gamepad",
+			"player_hitboxes",
+			"ataques_player",
+			"inimigo"
 		],
 		"subfolders": []
 	},
@@ -76,7 +107,8 @@
 	"eventSheets": {
 		"items": [
 			"ePrincipal",
-			"ePersonagem"
+			"ePersonagem",
+			"eInimigos"
 		],
 		"subfolders": []
 	},

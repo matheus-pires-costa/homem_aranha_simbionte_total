@@ -312,10 +312,10 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "player",
-									"sid": 168254074810885,
+									"sid": 779151968067051,
 									"behaviorType": "Plataforma",
 									"parameters": {
-										"vector-y": "-500"
+										"vector-y": "-400"
 									}
 								}
 							],

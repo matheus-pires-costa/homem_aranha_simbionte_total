@@ -130,7 +130,12 @@
 					"instanceVariables": {
 						"estado": "",
 						"noAr": false,
-						"sombra": 0
+						"sombra": 0,
+						"noAr_dir": "",
+						"atacando": false,
+						"combo": 1,
+						"combo_maximo": 2,
+						"combo_timer": 0
 					},
 					"behaviors": {
 						"8Direções": {
@@ -172,8 +177,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 443.648497020866,
-						"y": 466.5564382799332,
+						"x": 278.4834250871306,
+						"y": 410.05259788155007,
 						"width": 92.16381606146881,
 						"height": 99.25334037388949,
 						"originX": 0.5,

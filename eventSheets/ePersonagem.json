@@ -41,6 +41,15 @@
 								"instance-variable": "noAr"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 605380419196814,
+							"parameters": {
+								"instance-variable": "atacando"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [],
@@ -106,6 +115,278 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "ataques",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Teclado",
+									"sid": 453706346348905,
+									"parameters": {
+										"key": 70
+									}
+								}
+							],
+							"actions": [],
+							"sid": 978615399606254,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "player",
+											"sid": 809682963479722,
+											"parameters": {
+												"instance-variable": "atacando"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [],
+									"sid": 695290576707078,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "player",
+													"sid": 761166254253263,
+													"parameters": {
+														"instance-variable": "noAr"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "player",
+													"sid": 562436118396248,
+													"parameters": {
+														"instance-variable": "atacando",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "player",
+													"sid": 617543655424863,
+													"parameters": {
+														"instance-variable": "estado",
+														"value": "\"jumpAttack\""
+													}
+												}
+											],
+											"sid": 743588622190569
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 924800193783070
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "player",
+													"sid": 499112334199628,
+													"parameters": {
+														"instance-variable": "atacando",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "player",
+													"sid": 877011902620234,
+													"parameters": {
+														"instance-variable": "estado",
+														"value": "\"attack\" & player.combo"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "player",
+													"sid": 647355911915977,
+													"parameters": {
+														"instance-variable": "combo_timer",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 457358241995569,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "player",
+															"sid": 878357794114231,
+															"parameters": {
+																"instance-variable": "combo",
+																"comparison": 5,
+																"value": "player.combo_maximo"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-instvar-value",
+															"objectClass": "player",
+															"sid": 717423714125054,
+															"parameters": {
+																"instance-variable": "combo",
+																"value": "1"
+															}
+														}
+													],
+													"sid": 944461854815612
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 371144023686366
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-instvar",
+															"objectClass": "player",
+															"sid": 181072258072785,
+															"parameters": {
+																"instance-variable": "combo",
+																"value": "1"
+															}
+														}
+													],
+													"sid": 515339018408151
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "player",
+									"sid": 255049353698636,
+									"parameters": {
+										"instance-variable": "atacando"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 473144721011812,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-any-animation-finished",
+											"objectClass": "player",
+											"sid": 774977739333609
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "player",
+											"sid": 463904648908496,
+											"parameters": {
+												"instance-variable": "atacando",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 143209736976921
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "player",
+									"sid": 673700921011721,
+									"parameters": {
+										"instance-variable": "combo_timer",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "player",
+									"sid": 315473962238266,
+									"parameters": {
+										"instance-variable": "combo_timer",
+										"value": "dt"
+									}
+								}
+							],
+							"sid": 982956967744254
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "player",
+									"sid": 506597279815384,
+									"parameters": {
+										"instance-variable": "combo_timer",
+										"comparison": 2,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "player",
+									"sid": 125301155834740,
+									"parameters": {
+										"instance-variable": "combo_timer",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "player",
+									"sid": 782706189537883,
+									"parameters": {
+										"instance-variable": "combo",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 480117362122956
+						}
+					],
+					"sid": 917257888295456
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Caminhar",
 					"description": "",
 					"isActiveOnStart": true,
@@ -119,6 +400,15 @@
 									"sid": 863907579991504,
 									"parameters": {
 										"instance-variable": "noAr"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "player",
+									"sid": 526849263642834,
+									"parameters": {
+										"instance-variable": "atacando"
 									},
 									"isInverted": true
 								}
@@ -265,6 +555,15 @@
 										"instance-variable": "noAr"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "player",
+									"sid": 318008380862022,
+									"parameters": {
+										"instance-variable": "atacando"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -320,34 +619,6 @@
 								}
 							],
 							"sid": 697469188532755
-						},
-						{
-							"functionName": "pulo_movendo",
-							"functionDescription": "",
-							"functionCategory": "",
-							"functionReturnType": "none",
-							"functionCopyPicked": false,
-							"functionIsAsync": false,
-							"functionParameters": [
-								{
-									"name": "D",
-									"type": "boolean",
-									"initialValue": "false",
-									"comment": "",
-									"sid": 280766262599116
-								},
-								{
-									"name": "E",
-									"type": "boolean",
-									"initialValue": "false",
-									"comment": "",
-									"sid": 183150267681832
-								}
-							],
-							"eventType": "function-block",
-							"conditions": [],
-							"actions": [],
-							"sid": 320479065332229
 						},
 						{
 							"eventType": "block",
@@ -408,54 +679,6 @@
 												}
 											],
 											"sid": 142285431914154
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "key-is-down",
-													"objectClass": "Teclado",
-													"sid": 853564107501410,
-													"parameters": {
-														"key": 68
-													}
-												}
-											],
-											"actions": [
-												{
-													"callFunction": "pulo_movendo",
-													"sid": 502369956937734,
-													"parameters": [
-														true,
-														false
-													]
-												}
-											],
-											"sid": 355701309010304
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "key-is-down",
-													"objectClass": "Teclado",
-													"sid": 285443643024576,
-													"parameters": {
-														"key": 65
-													}
-												}
-											],
-											"actions": [
-												{
-													"callFunction": "pulo_movendo",
-													"sid": 491950253885045,
-													"parameters": [
-														false,
-														true
-													]
-												}
-											],
-											"sid": 982583846476163
 										},
 										{
 											"eventType": "block",
@@ -564,6 +787,15 @@
 									"sid": 233064516686165,
 									"parameters": {
 										"instance-variable": "noAr",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "player",
+									"sid": 653139826155688,
+									"parameters": {
+										"instance-variable": "atacando",
 										"value": "false"
 									}
 								}

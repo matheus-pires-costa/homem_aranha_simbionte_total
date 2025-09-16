@@ -1,14 +1,5 @@
 {
 	"name": "ePrincipal",
-	"events": [
-		{
-			"eventType": "include",
-			"includeSheet": "ePersonagem"
-		},
-		{
-			"eventType": "include",
-			"includeSheet": "eInimigos"
-		}
-	],
+	"events": [],
 	"sid": 553415931297793
 }

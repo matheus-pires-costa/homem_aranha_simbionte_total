@@ -15,22 +15,22 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 2,
-					"sid": 357525175419541,
+					"uid": 4,
+					"sid": 968578069468471,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 357525175419541,
+						"sid": 968578069468471,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 426.46410764292057,
-						"y": 238.6830134553651,
-						"width": 866.2942421965713,
-						"height": 485.4641076429206,
+						"x": 470,
+						"y": 90,
+						"width": 940,
+						"height": 180,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -44,7 +44,7 @@
 					}
 				},
 				{
-					"type": "funod2",
+					"type": "fundo2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -52,22 +52,22 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3,
-					"sid": 165611510404434,
+					"uid": 7,
+					"sid": 567195045984506,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 165611510404434,
+						"sid": 567195045984506,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 486.7107524523521,
-						"y": 426.7376003784823,
-						"width": 1764.2833797883027,
-						"height": 183.010922606716,
+						"x": 470,
+						"y": 90,
+						"width": 940,
+						"height": 180,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -76,7 +76,81 @@
 							1,
 							1
 						],
-						"angle": 0.00203420328228221,
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "fundo3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 8,
+					"sid": 729210899215676,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 729210899215676,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 470,
+						"y": 90,
+						"width": 940,
+						"height": 180,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "fundo4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"sid": 596248997758236,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 596248997758236,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 470,
+						"y": 90,
+						"width": 940,
+						"height": 180,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -116,72 +190,106 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "player",
+					"type": "t_fase1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "stop",
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 2,
+					"sid": 621709686218842,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 30,
+							"height": 8,
+							"max-width": 40,
+							"max-height": 34,
+							"data": "7x0,1,33x0,2,33x0,2,33x0,2,33x0,2,33x0,2,33x0,2,32x0,33,41,31x0,33,41,18,31x0,2,10,18,31x0,2,10,18,0,2x2,28x0,2,10,18,31x0,2,10,18,31x0,2,10,18,31x0,4,12,20,33x0,26,29x0,1,3x0,26,29x0,2,3x0,26,29x0,2,3x0,26,29x0,2,3x0,26,29x0,3,3x0,26,31x0,4,12,20,31x0,2,33x0,2,33x0,2,33x0,2,33x0,2,33x0,2,33x0,2,33x0,2,33x0,2,334x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"instanceFolderItem": {
+						"sid": 621709686218842,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": true,
+					"world": {
+						"x": 0,
+						"y": -64,
+						"width": 963.4477629786295,
+						"height": 269.70127204573316,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "jogador",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
-					"sid": 319479985782543,
+					"uid": 3,
+					"sid": 991011973330173,
 					"tags": "",
-					"instanceVariables": {
-						"estado": "",
-						"noAr": false,
-						"sombra": 0,
-						"noAr_dir": "",
-						"atacando": false,
-						"combo": 1,
-						"combo_maximo": 2,
-						"combo_timer": 0,
-						"acerto": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {
-						"8Direções": {
+						"Plataforma": {
 							"properties": {
-								"max-speed": 200,
+								"max-speed": 330,
 								"acceleration": 1500,
 								"deceleration": 1500,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"allow-sliding": false,
-								"default-controls": false,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
 								"enabled": true
 							}
 						},
-						"RestritoAoLayout": {
+						"CentrarEm": {
 							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Plataforma": {
-							"properties": {
-								"max-speed": 0,
-								"acceleration": 0,
-								"deceleration": 0,
-								"jump-strength": 0,
-								"gravity": 500,
-								"max-fall-speed": 400,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": false
+								"enabled": true
 							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 319479985782543,
+						"sid": 991011973330173,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 278.4834250871306,
-						"y": 410.05259788155007,
-						"width": 92.16381606146881,
-						"height": 99.25334037388949,
+						"x": 44.06741193649319,
+						"y": 159.80732137793643,
+						"width": 39,
+						"height": 39,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -195,96 +303,30 @@
 					}
 				},
 				{
-					"type": "player_hitboxes",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Attack1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7,
-					"sid": 130690478048736,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Fixar": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"effects": {
-						"Brilho": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 0
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 130690478048736,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": -118.10553045917288,
-						"y": 297.3470475739094,
-						"width": 83.30191067094296,
-						"height": 99.25334037388949,
-						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "inimigo",
+					"type": "portal",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "portal",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 9,
-					"sid": 173376881021720,
+					"uid": 10,
+					"sid": 566493618956446,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {
-						"Senóide": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 0.5,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 0.7,
-								"magnitude-random": 0,
-								"enabled": false,
-								"live-preview": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 173376881021720,
+						"sid": 566493618956446,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 467.632069463557,
-						"y": 353.33742948371287,
-						"width": 74.51676754181227,
-						"height": 115.85169373971496,
+						"x": 921.7993889229563,
+						"y": 73.83753032041525,
+						"width": 26,
+						"height": 42,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -333,23 +375,10 @@
 		"subfolders": []
 	},
 	"sid": 761468999262231,
-	"nonworld-instances": [
-		{
-			"type": "ataques_player",
-			"properties": {
-				"width": 10,
-				"height": 1,
-				"depth": 1
-			},
-			"uid": 8,
-			"sid": 275169421517346,
-			"tags": "",
-			"instanceVariables": {}
-		}
-	],
+	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 854,
-	"height": 480,
+	"width": 940,
+	"height": 180,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

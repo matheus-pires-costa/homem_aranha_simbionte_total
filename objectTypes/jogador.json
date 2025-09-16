@@ -15,6 +15,11 @@
 			"behaviorId": "scrollto",
 			"name": "CentrarEm",
 			"sid": 309493674453687
+		},
+		{
+			"behaviorId": "bound",
+			"name": "RestritoAoLayout",
+			"sid": 157119963648645
 		}
 	],
 	"effectTypes": [],

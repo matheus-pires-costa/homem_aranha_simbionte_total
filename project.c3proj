@@ -43,8 +43,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "bound",
+			"name": "Restrito ao layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Centrar em",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -60,7 +74,8 @@
 			"fundo2",
 			"fundo3",
 			"fundo4",
-			"portal"
+			"portal",
+			"sensor_solido"
 		],
 		"subfolders": []
 	},

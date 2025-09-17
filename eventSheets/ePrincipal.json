@@ -1,5 +1,261 @@
 {
 	"name": "ePrincipal",
-	"events": [],
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "animacoes",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 117350180527278,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "jogador",
+							"sid": 714288011644341,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "jogador",
+							"sid": 811446431517126,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 984960359204912
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 802062989188667,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "jogador",
+							"sid": 492955678537554,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "jogador",
+							"sid": 701346877326217,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 157044909161554
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 907953322451241,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "jogador",
+							"sid": 105972927013366,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 133474701974325
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "jogador",
+							"sid": 634950450153018,
+							"behaviorType": "Plataforma"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 643884301190202,
+							"parameters": {
+								"animation": "\"run\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 234728403899490
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-stopped",
+							"objectClass": "jogador",
+							"sid": 492394154875513,
+							"behaviorType": "Plataforma"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 941413843373192,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 619831595188109
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "jogador",
+							"sid": 955072108358198,
+							"behaviorType": "Plataforma"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 536542671858992,
+							"parameters": {
+								"animation": "\"jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 786829299285041
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "jogador",
+							"sid": 519497938485858,
+							"behaviorType": "Plataforma"
+						}
+					],
+					"actions": [],
+					"sid": 119322422214799,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "jogador",
+									"sid": 567109418432089,
+									"behaviorType": "Plataforma"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "jogador",
+									"sid": 171430293670754,
+									"parameters": {
+										"animation": "\"run\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 310411275599874
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 120432169542030
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "jogador",
+									"sid": 435262814840359,
+									"parameters": {
+										"animation": "\"idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 416802400523237
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 143657224153410,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 454630142350219,
+							"parameters": {
+								"animation": "\"attack\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 209612833768164
+				}
+			],
+			"sid": 379087456879088
+		}
+	],
 	"sid": 553415931297793
 }

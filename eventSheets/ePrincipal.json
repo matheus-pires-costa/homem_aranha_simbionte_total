@@ -2,6 +2,68 @@
 	"name": "ePrincipal",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "vida",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 352726140349796
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 196244253683803,
+					"parameters": {
+						"first-value": "vida",
+						"comparison": 2,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 146654066530034
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 347937297023126,
+					"parameters": {
+						"reset-static": false
+					}
+				}
+			],
+			"sid": 915539845536696
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 892216339408164
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "vida",
+					"sid": 778665525244415,
+					"parameters": {
+						"text": "\": \"& vida"
+					}
+				}
+			],
+			"sid": 673877385597231
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "animacoes",
@@ -255,6 +317,430 @@
 				}
 			],
 			"sid": 379087456879088
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "INIMIGOS",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "blob",
+							"sid": 512540852846536,
+							"parameters": {
+								"instance-variable": "direcao",
+								"comparison": 0,
+								"value": "\"direita\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "blob",
+							"sid": 708468396221812,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "blob",
+							"sid": 783442887490537,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 486382595485921
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "blob",
+							"sid": 447460858073063,
+							"parameters": {
+								"instance-variable": "direcao",
+								"comparison": 0,
+								"value": "\"esquerda\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "blob",
+							"sid": 423079080998915,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "blob",
+							"sid": 864313994107451,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 514602521860677
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "blob",
+							"sid": 430563241423534,
+							"parameters": {
+								"object": "sensor_blob_esq"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "blob",
+							"sid": 448995567710293,
+							"parameters": {
+								"instance-variable": "direcao",
+								"value": "\"esquerda\""
+							}
+						}
+					],
+					"sid": 481994057970836
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "blob",
+							"sid": 660548038780692,
+							"parameters": {
+								"object": "sensor_blob_dir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "blob",
+							"sid": 434184057483085,
+							"parameters": {
+								"instance-variable": "direcao",
+								"value": "\"direita\""
+							}
+						}
+					],
+					"sid": 995514847300764
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 251152919680193,
+							"parameters": {
+								"object": "blob"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 208719526813686,
+							"parameters": {
+								"animation": "\"attack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "blob",
+							"sid": 269995867576556,
+							"behaviorType": "Sólido",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "blob",
+							"sid": 714168203241243,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "blob",
+							"sid": 483239987517445,
+							"behaviorType": "Piscar",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 166684738378853,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "blob",
+							"sid": 513518338230133
+						}
+					],
+					"sid": 479601036877535
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 227652659245548,
+							"parameters": {
+								"object": "blob"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 302799796799257,
+							"parameters": {
+								"animation": "\"attack\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 529958609152386,
+							"parameters": {
+								"animation": "\"hit\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 795291295086684,
+							"parameters": {
+								"variable": "vida",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 368540149006702
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "jogador",
+							"sid": 184621591403090,
+							"parameters": {
+								"animation": "\"hit\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 665085413287430,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 950214414929982
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "jogador",
+							"sid": 149081540061962,
+							"parameters": {
+								"object": "sensor_tiro"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "inimigo2",
+							"sid": 335390683773273,
+							"parameters": {
+								"animation": "\"shoot\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 142731942931265
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "inimigo2",
+							"sid": 960231507920997,
+							"parameters": {
+								"animation": "\"shoot\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "inimigo2",
+							"sid": 151722565957709,
+							"parameters": {
+								"object": "bala",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 557663886342255,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						}
+					],
+					"sid": 684735629820036
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bala",
+							"sid": 177498334179431,
+							"parameters": {
+								"object": "jogador"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 252376795580604,
+							"parameters": {
+								"animation": "\"hit\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "bala",
+							"sid": 997434924375259
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 407337235076259,
+							"parameters": {
+								"variable": "vida",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 583980250412408
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 878868371631885,
+							"parameters": {
+								"object": "inimigo2"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 305151870080608,
+							"parameters": {
+								"animation": "\"attack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "inimigo2",
+							"sid": 514906447892105,
+							"behaviorType": "Sólido",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "inimigo2",
+							"sid": 169506949525023,
+							"behaviorType": "Piscar",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 356353855021437,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "inimigo2",
+							"sid": 629049183417328
+						}
+					],
+					"sid": 690206666493476
+				}
+			],
+			"sid": 816417454074139
 		}
 	],
 	"sid": 553415931297793

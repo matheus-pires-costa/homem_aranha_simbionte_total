@@ -22,6 +22,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Mosaico",
 			"author": "Scirra",
@@ -36,6 +43,20 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Projétil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Piscar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Plataforma",
 			"author": "Scirra",
@@ -45,6 +66,13 @@
 			"type": "behavior",
 			"id": "bound",
 			"name": "Restrito ao layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destruir fora do layout",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -75,7 +103,20 @@
 			"fundo3",
 			"fundo4",
 			"portal",
-			"sensor_solido"
+			"sensor_solido",
+			"blob",
+			"sensor_blob_dir",
+			"sensor_blob_esq",
+			"inimigo2",
+			"sensor_tiro",
+			"bala",
+			"iconeVida",
+			"vida",
+			"bau",
+			"chave",
+			"caixa_de_texto_spider",
+			"background_black",
+			"borda_textos"
 		],
 		"subfolders": []
 	},

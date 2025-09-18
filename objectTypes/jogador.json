@@ -4,7 +4,22 @@
 	"sid": 683300401056755,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "chave",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 740976186153846
+		},
+		{
+			"name": "bomba",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 514188584103317
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
@@ -240,7 +255,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5677918,
+						"imageSpriteId": 5787372,
 						"collisionPoly": {
 							"points": [
 								0.4879120879120875,
@@ -313,14 +328,14 @@
 								0,
 								0.8131868131868139,
 								0.19334719334719375,
-								0.7472527472527482,
-								0.41930873180873224,
+								1,
+								0,
 								1,
 								0.21075883575883625,
 								1,
 								0.5213097713097716,
-								0.6613553113553119,
-								0.5519750519750524,
+								1,
+								0.9937629937629938,
 								0.6967032967032967,
 								1,
 								0,
@@ -745,7 +760,7 @@
 				],
 				"sid": 373621788399750,
 				"name": "dead",
-				"isLooping": true,
+				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

@@ -1,0 +1,29 @@
+{
+	"name": "FonteDeSprites",
+	"plugin-id": "Spritefont2",
+	"sid": 398388401802830,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Âncora",
+			"sid": 612351650455470
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 5854500,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

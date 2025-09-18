@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -22,8 +29,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Texto",
+			"id": "Spritefont2",
+			"name": "Fonte de sprites",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -38,6 +45,13 @@
 			"type": "plugin",
 			"id": "gamepad",
 			"name": "Gamepad",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Âncora",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -111,12 +125,18 @@
 			"sensor_tiro",
 			"bala",
 			"iconeVida",
-			"vida",
 			"bau",
-			"chave",
+			"itensHud",
 			"caixa_de_texto_spider",
 			"background_black",
-			"borda_textos"
+			"borda_textos",
+			"FonteDeSprites",
+			"textovida",
+			"chaveGame",
+			"caixa1",
+			"venom",
+			"bomba1",
+			"Áudio"
 		],
 		"subfolders": []
 	},
@@ -145,11 +165,69 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "bater1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 273433825295699,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bomba1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 867797847591523,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "dead1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 864544543032093,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "teia1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 696779819684515,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "itemcoletado.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 566324778394296,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "danopersonagem.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 934620142938399,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Spider-Man The Animated Series Full Intro Theme - IntroKingOfMelody.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 197659122009481,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

@@ -15,6 +15,31 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 437384774718771
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 198314517950635,
+					"parameters": {
+						"audio-file": "Spider-Man The Animated Series Full Intro Theme - IntroKingOfMelody",
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"trilha\""
+					}
+				}
+			],
+			"sid": 837170557116937
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "compare-two-values",
 					"objectClass": "System",
 					"sid": 196244253683803,
@@ -54,10 +79,10 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "vida",
-					"sid": 778665525244415,
+					"objectClass": "textovida",
+					"sid": 209963564408008,
 					"parameters": {
-						"text": "\": \"& vida"
+						"text": "\": \" & vida"
 					}
 				}
 			],
@@ -311,6 +336,18 @@
 								"animation": "\"attack\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 222168961221572,
+							"parameters": {
+								"audio-file": "bater1",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 209612833768164
@@ -498,16 +535,127 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 166684738378853,
+							"sid": 827586570264181,
 							"parameters": {
-								"seconds": "1.0",
+								"seconds": "0.5",
 								"use-timescale": true
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "blob",
+							"sid": 145866429555928,
+							"parameters": {
+								"object": "chaveGame",
+								"layer": "1",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
 							"id": "destroy",
 							"objectClass": "blob",
 							"sid": 513518338230133
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "background_black",
+							"sid": 583065862496436,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "caixa_de_texto_spider",
+							"sid": 455031624191689,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FonteDeSprites",
+							"sid": 995622001084500,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FonteDeSprites",
+							"sid": 885997293838997,
+							"parameters": {
+								"text": "\"Hum! Parece que ele deixou cair algo....\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "borda_textos",
+							"sid": 529735536163012,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "jogador",
+							"sid": 461427318097866,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 578912523018879,
+							"parameters": {
+								"seconds": "3.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "background_black",
+							"sid": 272977554071657,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "borda_textos",
+							"sid": 471644119652689,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "caixa_de_texto_spider",
+							"sid": 328990247162863,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FonteDeSprites",
+							"sid": 158259151688975,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "jogador",
+							"sid": 903107931273819,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "enabled"
+							}
 						}
 					],
 					"sid": 479601036877535
@@ -541,6 +689,18 @@
 							"parameters": {
 								"animation": "\"hit\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 604234663088138,
+							"parameters": {
+								"audio-file": "danopersonagem",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -665,6 +825,18 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 323753353878616,
+							"parameters": {
+								"audio-file": "danopersonagem",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "bala",
 							"sid": 997434924375259
@@ -738,9 +910,770 @@
 						}
 					],
 					"sid": 690206666493476
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 541558131193989,
+							"parameters": {
+								"object": "chaveGame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "chaveGame",
+							"sid": 644109699266408
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 275174523277052,
+							"parameters": {
+								"audio-file": "itemcoletado",
+								"loop": "not-looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "jogador",
+							"sid": 737357147385153,
+							"parameters": {
+								"instance-variable": "chave",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "background_black",
+							"sid": 616245434100338,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "caixa_de_texto_spider",
+							"sid": 103159791035599,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FonteDeSprites",
+							"sid": 391578079742426,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FonteDeSprites",
+							"sid": 783420699676307,
+							"parameters": {
+								"text": "\"O que sera que essa chave abre?...\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "borda_textos",
+							"sid": 461086860656966,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "itensHud",
+							"sid": 310468362354719,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 749728649750811,
+							"parameters": {
+								"seconds": "3.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "background_black",
+							"sid": 870836642763115,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "borda_textos",
+							"sid": 350443462254127,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "caixa_de_texto_spider",
+							"sid": 505778997689765,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FonteDeSprites",
+							"sid": 933499298491110,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 935631680172973
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bala",
+							"sid": 833141293842070,
+							"parameters": {
+								"object": "sensor_solido"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "bala",
+							"sid": 227093968235853
+						}
+					],
+					"sid": 870484574913603
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 771935811505463,
+							"parameters": {
+								"object": "venom"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 721926756968874,
+							"parameters": {
+								"animation": "\"dead\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "jogador",
+							"sid": 522555782870218,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 937129773915773,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 643077699395731,
+							"parameters": {
+								"animation": "\"dead\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 278661232275223,
+							"parameters": {
+								"audio-file": "dead1",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "background_black",
+							"sid": 435740108160472,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "caixa_de_texto_spider",
+							"sid": 440855021072916,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FonteDeSprites",
+							"sid": 660995429849722,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "FonteDeSprites",
+							"sid": 887351862106137,
+							"parameters": {
+								"text": "\"Acho que vou precisar de algo mais forte para derrotar ele...\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "borda_textos",
+							"sid": 548027070288595,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 569458657863211,
+							"parameters": {
+								"seconds": "3.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "background_black",
+							"sid": 899979937505058,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "borda_textos",
+							"sid": 232270495438646,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "caixa_de_texto_spider",
+							"sid": 358857610558849,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FonteDeSprites",
+							"sid": 870021181701967,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 943656296561262,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 428045086937687
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 475989696132352,
+							"parameters": {
+								"reset-static": false
+							}
+						}
+					],
+					"sid": 490910221806335
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 289569409244503,
+							"parameters": {
+								"key": 67
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "jogador",
+							"sid": 631938235807376,
+							"parameters": {
+								"instance-variable": "bomba"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "jogador",
+							"sid": 687353668371074,
+							"parameters": {
+								"object": "bomba1",
+								"layer": "1",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "bomba1",
+							"sid": 936776131495658,
+							"behaviorType": "Piscar",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 431277816687917,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 768395334215879,
+							"parameters": {
+								"audio-file": "bomba1",
+								"loop": "not-looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "bomba1",
+							"sid": 326301156190323,
+							"parameters": {
+								"animation": "\"explodindo\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 661960553299204,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "bomba1",
+							"sid": 634683692456505
+						}
+					],
+					"sid": 239242977942279
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bomba1",
+							"sid": 853560495691002,
+							"parameters": {
+								"object": "venom"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "bomba1",
+							"sid": 521814016439137,
+							"parameters": {
+								"animation": "\"explodindo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "venom",
+							"sid": 964537379849863,
+							"behaviorType": "Sólido",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "venom",
+							"sid": 278318234344028,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "venom",
+							"sid": 726473020402717,
+							"parameters": {
+								"animation": "\"dead\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 126473717137210,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "venom",
+							"sid": 569975753201612,
+							"behaviorType": "Piscar",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 928109193821498,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "venom",
+							"sid": 260687294808464
+						}
+					],
+					"sid": 909500868349463
 				}
 			],
 			"sid": 816417454074139
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 470817697842254,
+					"parameters": {
+						"object": "bau"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "jogador",
+					"sid": 211996089757758,
+					"parameters": {
+						"instance-variable": "chave"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "bau",
+					"sid": 646872406316866,
+					"behaviorType": "Piscar",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 253804440666014,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "bau",
+					"sid": 388396749442497,
+					"parameters": {
+						"object": "bomba1",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bau",
+					"sid": 345411322138564
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "itensHud",
+					"sid": 647710931760211,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 109077029016394
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 282922215835356,
+					"parameters": {
+						"object": "bomba1"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "itensHud",
+					"sid": 716869731862377,
+					"parameters": {
+						"animation": "\"chave\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "bomba1",
+					"sid": 657130059475775
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 261363115140547,
+					"parameters": {
+						"audio-file": "itemcoletado",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "itensHud",
+					"sid": 839801137459291,
+					"parameters": {
+						"animation": "\"bomba\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "itensHud",
+					"sid": 509055020796197,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "jogador",
+					"sid": 661373819232700,
+					"parameters": {
+						"instance-variable": "bomba",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 200024245287198,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 927750035439711,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FonteDeSprites",
+					"sid": 716405239037615,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FonteDeSprites",
+					"sid": 680742787472678,
+					"parameters": {
+						"text": "\"Quero ver esse buxa do Venom me derrotar agora hehehe....\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 201962187233378,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 142916934165493,
+					"parameters": {
+						"seconds": "3.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 392361388592464,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 251423255727547,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 430010387535746,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FonteDeSprites",
+					"sid": 241683379287367,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 782575172215705
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 221267593604093,
+					"parameters": {
+						"object": "caixa1"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "jogador",
+					"sid": 133068351621594,
+					"parameters": {
+						"animation": "\"attack\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "caixa1",
+					"sid": 930807454030400,
+					"behaviorType": "Piscar",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 184994247903216,
+					"parameters": {
+						"seconds": "0.5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "caixa1",
+					"sid": 278907241914630
+				}
+			],
+			"sid": 300220301828248
 		}
 	],
 	"sid": 553415931297793

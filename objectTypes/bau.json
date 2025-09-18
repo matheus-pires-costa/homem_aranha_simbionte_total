@@ -10,6 +10,11 @@
 			"behaviorId": "solid",
 			"name": "Sólido",
 			"sid": 657728716162618
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Piscar",
+			"sid": 884592352062262
 		}
 	],
 	"effectTypes": [],
@@ -21,7 +26,7 @@
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

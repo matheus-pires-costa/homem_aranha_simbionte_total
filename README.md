@@ -8,3 +8,4 @@ O jogo Está Concluido e hospedado no itch.io
 https://matheus-pires.itch.io/homem-aranha-simbionte-total
 
 ## Link para o projeto Principal (O site onde está o conteudo sobre o Jogo):
+https://github.com/matheus-pires-costa/projeto-tech-academy1

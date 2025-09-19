@@ -167,7 +167,17 @@
 					"sid": 653640840934253,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Âncora": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 653640840934253,
 						"expanded": true
@@ -204,7 +214,17 @@
 					"sid": 728238910433180,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Âncora": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 728238910433180,
 						"expanded": true
@@ -251,7 +271,17 @@
 					"sid": 195089151702983,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Âncora": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 195089151702983,
 						"expanded": true
@@ -340,7 +370,17 @@
 					"sid": 143560550811588,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Âncora": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 143560550811588,
 						"expanded": true
@@ -387,7 +427,17 @@
 					"sid": 371539938941132,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Âncora": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 371539938941132,
 						"expanded": true
@@ -515,7 +565,17 @@
 					"sid": 172612121927331,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Âncora": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 172612121927331,
 						"expanded": true
@@ -916,7 +976,7 @@
 					"type": "caixa1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "fechando",
+						"initial-animation": "espiando",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -959,8 +1019,8 @@
 					"world": {
 						"x": 854.4118910500744,
 						"y": 118.0584939586951,
-						"width": 21.72443741780249,
-						"height": 17.61440871713716,
+						"width": 20.550143503326684,
+						"height": 15.265820888185539,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -977,7 +1037,7 @@
 					"type": "caixa1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "fechando",
+						"initial-animation": "espiando",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1020,8 +1080,8 @@
 					"world": {
 						"x": 853.98360871895,
 						"y": 130.2861550312682,
-						"width": 21.724437417802495,
-						"height": 17.61440871713716,
+						"width": 20.550143503326684,
+						"height": 15.265820888185539,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -1057,7 +1117,17 @@
 					"sid": 182118336270093,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Âncora": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 182118336270093,
 						"expanded": true
@@ -1156,7 +1226,7 @@
 						"x": 209.31463466744003,
 						"y": 129.01917845524702,
 						"width": 31.80860997839534,
-						"height": 126.89193212048532,
+						"height": 126.89193212048534,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1500,7 +1570,7 @@
 					"type": "caixa1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "fechando",
+						"initial-animation": "espiando",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1543,8 +1613,8 @@
 					"world": {
 						"x": 853.2552611817858,
 						"y": 106.87773856523856,
-						"width": 21.724437417802495,
-						"height": 17.61440871713716,
+						"width": 20.550143503326684,
+						"height": 15.265820888185539,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -1561,7 +1631,7 @@
 					"type": "caixa1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "fechando",
+						"initial-animation": "espiando",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1604,8 +1674,8 @@
 					"world": {
 						"x": 881.4242744456951,
 						"y": 129.89213675952203,
-						"width": 21.724437417802495,
-						"height": 17.61440871713716,
+						"width": 20.550143503326684,
+						"height": 15.265820888185539,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -1622,7 +1692,7 @@
 					"type": "caixa1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "fechando",
+						"initial-animation": "espiando",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1665,8 +1735,8 @@
 					"world": {
 						"x": 879.8821012879769,
 						"y": 119.09692465549506,
-						"width": 21.724437417802495,
-						"height": 17.61440871713716,
+						"width": 20.550143503326684,
+						"height": 15.265820888185539,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -1683,7 +1753,7 @@
 					"type": "caixa1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "fechando",
+						"initial-animation": "espiando",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1726,8 +1796,8 @@
 					"world": {
 						"x": 879.8821012879769,
 						"y": 107.91616926203858,
-						"width": 21.724437417802495,
-						"height": 17.61440871713716,
+						"width": 20.550143503326684,
+						"height": 15.265820888185539,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [

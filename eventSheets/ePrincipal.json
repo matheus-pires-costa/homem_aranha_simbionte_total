@@ -70,9 +70,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "dialogo",
-					"sid": 734271298901499,
+					"sid": 520470512069348,
 					"parameters": {
-						"text": "\"BOMM DIAA Nova York! O que você tem para mim hoje?!\""
+						"text": "\"E la vamos nos Nova York!! mais um dia....\""
 					}
 				},
 				{
@@ -143,18 +143,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "tutorial",
-					"sid": 920886629241769,
+					"sid": 782230500768570,
 					"parameters": {
-						"text": "\"W: pulo\nD: Direita\nA: Esquerda\nEspaco: Soco\""
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "jogador",
-					"sid": 311851648234732,
-					"behaviorType": "Plataforma",
-					"parameters": {
-						"state": "disabled"
+						"text": "\"W: pulo\nD: Direita\nA: Esquerda\nEspaco: Soco\nC: Bomba\""
 					}
 				},
 				{
@@ -180,15 +171,6 @@
 					"sid": 555182120367728,
 					"parameters": {
 						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "jogador",
-					"sid": 437388911466886,
-					"behaviorType": "Plataforma",
-					"parameters": {
-						"state": "enabled"
 					}
 				}
 			],
@@ -751,9 +733,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "dialogo",
-							"sid": 885997293838997,
+							"sid": 175194000740407,
 							"parameters": {
-								"text": "\"Hum! Parece que ele deixou cair algo....\""
+								"text": "\"Hum! Ele deixou esse trequinho cair, o que sera que faz....\""
 							}
 						},
 						{
@@ -1385,9 +1367,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "dialogo",
-							"sid": 783420699676307,
+							"sid": 572396705368274,
 							"parameters": {
-								"text": "\"O que sera que essa chave abre?...\""
+								"text": "\"Uma chave?! O que sera que essa chave abre?...\""
 							}
 						},
 						{
@@ -1898,6 +1880,91 @@
 						}
 					],
 					"sid": 234160696984364
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bomba1",
+							"sid": 854207112480539,
+							"parameters": {
+								"object": "carnage"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "bomba1",
+							"sid": 338822798795026,
+							"parameters": {
+								"animation": "\"explodindo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "carnage",
+							"sid": 767276408088611,
+							"behaviorType": "Sólido",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "carnage",
+							"sid": 653773692352724,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "carnage",
+							"sid": 277494524284688,
+							"parameters": {
+								"animation": "\"dead\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 665440951064614,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "carnage",
+							"sid": 200513315853960,
+							"behaviorType": "Piscar",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 107730247364208,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "carnage",
+							"sid": 641185167041601
+						}
+					],
+					"sid": 286094693059965
 				}
 			],
 			"sid": 816417454074139
@@ -2104,9 +2171,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "dialogo",
-					"sid": 680742787472678,
+					"sid": 959379865145479,
 					"parameters": {
-						"text": "\"Quero ver esse buxa do Venom me derrotar agora hehehe....\""
+						"text": "\"Quero ver quem me derrotar agora hehehe....\""
 					}
 				},
 				{
@@ -2276,9 +2343,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "dialogo",
-					"sid": 799967773204467,
+					"sid": 986623564721051,
 					"parameters": {
-						"text": "\"Eu sou brabo mesmo o proprio miranha\""
+						"text": "\"Vamos la ne, com grandes podereses... grandes resposabilidades....\""
 					}
 				},
 				{

@@ -36,6 +36,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Plano de Fundo em Blocos",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Mosaico",
 			"author": "Scirra",
@@ -148,7 +155,12 @@
 			"dinheiro_hud",
 			"dinheiro_texto",
 			"t_fase2",
-			"duendeVerde"
+			"duendeVerde",
+			"fundotipo2",
+			"PlanoDeFundoEmBlocos",
+			"PlanoDeFundoEmBlocos2",
+			"PlanoDeFundoEmBlocos3",
+			"carnage"
 		],
 		"subfolders": []
 	},
@@ -162,14 +174,18 @@
 	"layouts": {
 		"items": [
 			"fase1",
-			"fase2"
+			"fase2",
+			"fase3",
+			"fase4"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"ePrincipal",
-			"efase2"
+			"efase2",
+			"efase3",
+			"efase4"
 		],
 		"subfolders": []
 	},

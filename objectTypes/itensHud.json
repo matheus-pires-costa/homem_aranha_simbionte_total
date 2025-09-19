@@ -5,7 +5,13 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Âncora",
+			"sid": 570058594512601
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

@@ -1,38 +1,32 @@
 {
-	"name": "background_tutorial",
+	"name": "fundotipo2",
 	"plugin-id": "Sprite",
-	"sid": 653246299692102,
+	"sid": 179123557017050,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Anchor",
-			"name": "Âncora",
-			"sid": 901309016469250
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 576,
+						"height": 324,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8217444,
+						"imageSpriteId": 3909260,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 780916909947979,
+				"sid": 611744293217190,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

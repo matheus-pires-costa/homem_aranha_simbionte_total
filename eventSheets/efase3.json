@@ -1,5 +1,5 @@
 {
-	"name": "efase2",
+	"name": "efase3",
 	"events": [
 		{
 			"eventType": "include",
@@ -9,16 +9,19 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 342768047197713
+					"id": "on-animation-finished",
+					"objectClass": "carnage",
+					"sid": 554841944893259,
+					"parameters": {
+						"animation": "\"dead\""
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "background_black",
-					"sid": 156137861642057,
+					"sid": 871995274881520,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -26,7 +29,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "caixa_de_texto_spider",
-					"sid": 590340462242233,
+					"sid": 925868924139979,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -34,7 +37,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "dialogo",
-					"sid": 518744548096281,
+					"sid": 550575883476545,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -42,15 +45,15 @@
 				{
 					"id": "set-text",
 					"objectClass": "dialogo",
-					"sid": 756312605499877,
+					"sid": 827747329009334,
 					"parameters": {
-						"text": "\"Duende Verde??! Na Estacao de Luz? Que foi, a Oscorp ta querendo economizar  na conta de luz? kkkkkkk\""
+						"text": "\"Voce e tao ruim que nem os outros viloes te querem por perto, tal pai tal filho mesmo...\""
 					}
 				},
 				{
 					"id": "set-visible",
 					"objectClass": "borda_textos",
-					"sid": 511103268816232,
+					"sid": 898276953769535,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -58,7 +61,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 989314685836572,
+					"sid": 803092139919857,
 					"parameters": {
 						"seconds": "10.0",
 						"use-timescale": true
@@ -67,7 +70,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "background_black",
-					"sid": 711411423400611,
+					"sid": 211437732992024,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -75,7 +78,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "borda_textos",
-					"sid": 892318846906014,
+					"sid": 606109753267482,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -83,7 +86,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "caixa_de_texto_spider",
-					"sid": 981627162253100,
+					"sid": 172594694757176,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -91,14 +94,14 @@
 				{
 					"id": "set-visible",
 					"objectClass": "dialogo",
-					"sid": 571656384790962,
+					"sid": 980742153724044,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 240026174002737
+			"sid": 563752888325456
 		}
 	],
-	"sid": 266436452470273
+	"sid": 458041612040704
 }

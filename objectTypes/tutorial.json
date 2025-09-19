@@ -1,14 +1,14 @@
 {
-	"name": "t_fase1",
-	"plugin-id": "Tilemap",
-	"sid": 184344366585008,
+	"name": "tutorial",
+	"plugin-id": "Spritefont2",
+	"sid": 919371898190597,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 256,
+		"width": 128,
 		"height": 256,
 		"originX": 0.5,
 		"originY": 0.5,
@@ -16,9 +16,8 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 5297569,
+		"imageSpriteId": 1496211,
 		"useCollisionPoly": true,
 		"tag": ""
-	},
-	"tile-collision-polys": {}
+	}
 }

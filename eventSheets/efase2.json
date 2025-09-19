@@ -1,0 +1,104 @@
+{
+	"name": "efase2",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ePrincipal"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 342768047197713
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 156137861642057,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 590340462242233,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo",
+					"sid": 518744548096281,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "dialogo",
+					"sid": 202356756465452,
+					"parameters": {
+						"text": "\"Duende Verde??! Na Estacao de Luz? Que foi, a Oscorp ta querendo economizar  na luz? kkkkkkk\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 511103268816232,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 989314685836572,
+					"parameters": {
+						"seconds": "10.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 711411423400611,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 892318846906014,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 981627162253100,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo",
+					"sid": 571656384790962,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 240026174002737
+		}
+	],
+	"sid": 266436452470273
+}

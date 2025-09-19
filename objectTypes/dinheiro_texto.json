@@ -1,17 +1,11 @@
 {
-	"name": "FonteDeSprites",
+	"name": "dinheiro_texto",
 	"plugin-id": "Spritefont2",
-	"sid": 398388401802830,
+	"sid": 147405658372890,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Anchor",
-			"name": "Âncora",
-			"sid": 612351650455470
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
 		"width": 128,
@@ -22,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 5854500,
+		"imageSpriteId": 3076479,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

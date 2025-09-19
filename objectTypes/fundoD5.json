@@ -1,0 +1,58 @@
+{
+	"name": "fundoD5",
+	"plugin-id": "Sprite",
+	"sid": 765838880436815,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 576,
+						"height": 324,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9849440,
+						"collisionPoly": {
+							"points": [
+								0.4791666666666667,
+								0.07098765432098765,
+								0.8125,
+								0.4382716049382716,
+								1,
+								0.7191358024691358,
+								1,
+								1,
+								0,
+								1,
+								0.013888888888888888,
+								0.5370370370370371,
+								0.3940972222222222,
+								0.07716049382716049
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 406964903665126,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

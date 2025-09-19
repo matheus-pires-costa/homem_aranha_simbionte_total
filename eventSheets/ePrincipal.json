@@ -12,6 +12,16 @@
 			"sid": 352726140349796
 		},
 		{
+			"eventType": "variable",
+			"name": "dinheiro",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 466877662749747
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -31,6 +41,154 @@
 						"volume": "-20",
 						"stereo-pan": "0",
 						"tag-optional": "\"trilha\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 616173640470755,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 921866727980664,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo",
+					"sid": 850403116349798,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "dialogo",
+					"sid": 734271298901499,
+					"parameters": {
+						"text": "\"BOMM DIAA Nova York! O que você tem para mim hoje?!\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 395866062714859,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 171005748837262,
+					"parameters": {
+						"seconds": "5.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 666135338891064,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 405360737539196,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 437793726650377,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo",
+					"sid": 470744547350727,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_tutorial",
+					"sid": 520979135336723,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "tutorial",
+					"sid": 800056353120283,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "tutorial",
+					"sid": 920886629241769,
+					"parameters": {
+						"text": "\"W: pulo\nD: Direita\nA: Esquerda\nEspaco: Soco\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jogador",
+					"sid": 311851648234732,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 389711928735620,
+					"parameters": {
+						"seconds": "5.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_tutorial",
+					"sid": 675642567790506,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "tutorial",
+					"sid": 555182120367728,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jogador",
+					"sid": 437388911466886,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"state": "enabled"
 					}
 				}
 			],
@@ -83,6 +241,14 @@
 					"sid": 209963564408008,
 					"parameters": {
 						"text": "\": \" & vida"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "dinheiro_texto",
+					"sid": 804852700054726,
+					"parameters": {
+						"text": "\":\" & dinheiro"
 					}
 				}
 			],
@@ -367,7 +533,7 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 512540852846536,
 							"parameters": {
 								"instance-variable": "direcao",
@@ -379,7 +545,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 708468396221812,
 							"behaviorType": "Plataforma",
 							"parameters": {
@@ -388,7 +554,7 @@
 						},
 						{
 							"id": "set-mirrored",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 783442887490537,
 							"parameters": {
 								"state": "not-mirrored"
@@ -402,7 +568,7 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 447460858073063,
 							"parameters": {
 								"instance-variable": "direcao",
@@ -414,7 +580,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 423079080998915,
 							"behaviorType": "Plataforma",
 							"parameters": {
@@ -423,7 +589,7 @@
 						},
 						{
 							"id": "set-mirrored",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 864313994107451,
 							"parameters": {
 								"state": "mirrored"
@@ -437,7 +603,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 430563241423534,
 							"parameters": {
 								"object": "sensor_blob_esq"
@@ -447,7 +613,7 @@
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 448995567710293,
 							"parameters": {
 								"instance-variable": "direcao",
@@ -462,7 +628,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 660548038780692,
 							"parameters": {
 								"object": "sensor_blob_dir"
@@ -472,7 +638,7 @@
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 434184057483085,
 							"parameters": {
 								"instance-variable": "direcao",
@@ -490,7 +656,7 @@
 							"objectClass": "jogador",
 							"sid": 251152919680193,
 							"parameters": {
-								"object": "blob"
+								"object": "blob_chave"
 							}
 						},
 						{
@@ -505,7 +671,7 @@
 					"actions": [
 						{
 							"id": "set-enabled",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 269995867576556,
 							"behaviorType": "Sólido",
 							"parameters": {
@@ -514,7 +680,7 @@
 						},
 						{
 							"id": "set-enabled",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 714168203241243,
 							"behaviorType": "Plataforma",
 							"parameters": {
@@ -523,7 +689,7 @@
 						},
 						{
 							"id": "flash",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 483239987517445,
 							"behaviorType": "Piscar",
 							"parameters": {
@@ -543,7 +709,7 @@
 						},
 						{
 							"id": "spawn-another-object",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 145866429555928,
 							"parameters": {
 								"object": "chaveGame",
@@ -555,7 +721,7 @@
 						},
 						{
 							"id": "destroy",
-							"objectClass": "blob",
+							"objectClass": "blob_chave",
 							"sid": 513518338230133
 						},
 						{
@@ -576,7 +742,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 995622001084500,
 							"parameters": {
 								"visibility": "visible"
@@ -584,7 +750,7 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 885997293838997,
 							"parameters": {
 								"text": "\"Hum! Parece que ele deixou cair algo....\""
@@ -642,7 +808,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 158259151688975,
 							"parameters": {
 								"visibility": "invisible"
@@ -668,7 +834,7 @@
 							"objectClass": "jogador",
 							"sid": 227652659245548,
 							"parameters": {
-								"object": "blob"
+								"object": "blob_chave"
 							}
 						},
 						{
@@ -714,6 +880,248 @@
 						}
 					],
 					"sid": 368540149006702
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "blob",
+							"sid": 379709628748159,
+							"parameters": {
+								"instance-variable": "direcao",
+								"comparison": 0,
+								"value": "\"direita\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "blob",
+							"sid": 623869685493643,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "blob",
+							"sid": 370385666381864,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 516537451162128
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "blob",
+							"sid": 926186798484440,
+							"parameters": {
+								"instance-variable": "direcao",
+								"comparison": 0,
+								"value": "\"esquerda\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "blob",
+							"sid": 753337775715958,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "blob",
+							"sid": 456460384441291,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 356077840605023
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "blob",
+							"sid": 430878187639249,
+							"parameters": {
+								"object": "sensor_blob_esq"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "blob",
+							"sid": 987154446737271,
+							"parameters": {
+								"instance-variable": "direcao",
+								"value": "\"esquerda\""
+							}
+						}
+					],
+					"sid": 888759519669778
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "blob",
+							"sid": 941783507688170,
+							"parameters": {
+								"object": "sensor_blob_dir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "blob",
+							"sid": 328010480298992,
+							"parameters": {
+								"instance-variable": "direcao",
+								"value": "\"direita\""
+							}
+						}
+					],
+					"sid": 699411979319891
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 991711880679075,
+							"parameters": {
+								"object": "blob"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 817269618658089,
+							"parameters": {
+								"animation": "\"attack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "blob",
+							"sid": 966498660589967,
+							"behaviorType": "Sólido",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "blob",
+							"sid": 401748262041165,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "blob",
+							"sid": 357992864813325,
+							"behaviorType": "Piscar",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 720419901126807,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "blob",
+							"sid": 458435627954478
+						}
+					],
+					"sid": 352804768376180
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 628726590866511,
+							"parameters": {
+								"object": "blob"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 148965792731074,
+							"parameters": {
+								"animation": "\"attack\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 533876553507550,
+							"parameters": {
+								"animation": "\"hit\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 676970549893967,
+							"parameters": {
+								"audio-file": "danopersonagem",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 368383060433054,
+							"parameters": {
+								"variable": "vida",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 473315982733522
 				},
 				{
 					"eventType": "block",
@@ -781,10 +1189,10 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "inimigo2",
-							"sid": 151722565957709,
+							"sid": 929510828899212,
 							"parameters": {
 								"object": "bala",
-								"layer": "0",
+								"layer": "1",
 								"image-point": "1",
 								"create-hierarchy": false,
 								"template-name": "\"\""
@@ -968,7 +1376,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 391578079742426,
 							"parameters": {
 								"visibility": "visible"
@@ -976,7 +1384,7 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 783420699676307,
 							"parameters": {
 								"text": "\"O que sera que essa chave abre?...\""
@@ -1033,7 +1441,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 933499298491110,
 							"parameters": {
 								"visibility": "invisible"
@@ -1142,7 +1550,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 660995429849722,
 							"parameters": {
 								"visibility": "visible"
@@ -1150,7 +1558,7 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 887351862106137,
 							"parameters": {
 								"text": "\"Acho que vou precisar de algo mais forte para derrotar ele...\""
@@ -1199,7 +1607,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FonteDeSprites",
+							"objectClass": "dialogo",
 							"sid": 870021181701967,
 							"parameters": {
 								"visibility": "invisible"
@@ -1405,6 +1813,91 @@
 						}
 					],
 					"sid": 909500868349463
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bomba1",
+							"sid": 921302854840990,
+							"parameters": {
+								"object": "duendeVerde"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "bomba1",
+							"sid": 348752523009242,
+							"parameters": {
+								"animation": "\"explodindo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "duendeVerde",
+							"sid": 156195887888362,
+							"behaviorType": "Sólido",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "duendeVerde",
+							"sid": 694621898031787,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "duendeVerde",
+							"sid": 124401550691009,
+							"parameters": {
+								"animation": "\"dead\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 898747831218108,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "duendeVerde",
+							"sid": 859332322254201,
+							"behaviorType": "Piscar",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 917196352577797,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "duendeVerde",
+							"sid": 387210498705433
+						}
+					],
+					"sid": 234160696984364
 				}
 			],
 			"sid": 816417454074139
@@ -1477,6 +1970,48 @@
 				}
 			],
 			"sid": 109077029016394
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 211285269552684,
+					"parameters": {
+						"object": "dinheiro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 302922363396607,
+					"parameters": {
+						"variable": "dinheiro",
+						"value": "10"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "dinheiro",
+					"sid": 953578152072103
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 214699755934931,
+					"parameters": {
+						"audio-file": "itemcoletado",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 217565808936560
 		},
 		{
 			"eventType": "block",
@@ -1560,7 +2095,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "FonteDeSprites",
+					"objectClass": "dialogo",
 					"sid": 716405239037615,
 					"parameters": {
 						"visibility": "visible"
@@ -1568,7 +2103,7 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "FonteDeSprites",
+					"objectClass": "dialogo",
 					"sid": 680742787472678,
 					"parameters": {
 						"text": "\"Quero ver esse buxa do Venom me derrotar agora hehehe....\""
@@ -1617,7 +2152,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "FonteDeSprites",
+					"objectClass": "dialogo",
 					"sid": 241683379287367,
 					"parameters": {
 						"visibility": "invisible"
@@ -1668,12 +2203,152 @@
 					}
 				},
 				{
+					"id": "spawn-another-object",
+					"objectClass": "caixa1",
+					"sid": 681777180214394,
+					"parameters": {
+						"object": "dinheiro",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "caixa1",
 					"sid": 278907241914630
 				}
 			],
 			"sid": 300220301828248
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 310349455369562,
+					"parameters": {
+						"object": "portal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "jogador",
+					"sid": 334372671947471,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "jogador",
+					"sid": 547356883704798
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 136488660690436,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 210296865542799,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo",
+					"sid": 479705195892940,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "dialogo",
+					"sid": 799967773204467,
+					"parameters": {
+						"text": "\"Eu sou brabo mesmo o proprio miranha\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 213175283070838,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 274834059113218,
+					"parameters": {
+						"seconds": "3.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 652766948134144,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 105987299134504,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 429190423535646,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo",
+					"sid": 505512075778128,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 373132786120570,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 697599963400560,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 241192924507619
 		}
 	],
 	"sid": 553415931297793

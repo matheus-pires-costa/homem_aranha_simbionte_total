@@ -1,7 +1,7 @@
 {
-	"name": "t_fase1",
+	"name": "t_fase2",
 	"plugin-id": "Tilemap",
-	"sid": 184344366585008,
+	"sid": 122762741825467,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -16,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 5297569,
+		"imageSpriteId": 409796,
 		"useCollisionPoly": true,
 		"tag": ""
 	},

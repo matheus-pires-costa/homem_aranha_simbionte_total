@@ -619,8 +619,8 @@
 					{
 						"width": 39,
 						"height": 37,
-						"originX": 0.8974358974358975,
-						"originY": 0.3783783783783784,
+						"originX": 0.5,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -639,6 +639,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.8974358974358975,
+								"y": 0.3783783783783784
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

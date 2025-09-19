@@ -1,0 +1,66 @@
+{
+	"name": "dinheiro_hud",
+	"plugin-id": "Sprite",
+	"sid": 578687370974096,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 14,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2236502,
+						"collisionPoly": {
+							"points": [
+								0.4666666666666667,
+								0,
+								0.6666666666666666,
+								0,
+								1,
+								0.14285714285714285,
+								1,
+								0.2857142857142857,
+								0.9333333333333333,
+								0.42857142857142855,
+								0.8,
+								0.6428571428571429,
+								0.4666666666666667,
+								1,
+								0.26666666666666666,
+								1,
+								0.06666666666666667,
+								0.9285714285714286,
+								0,
+								0.8571428571428571,
+								0,
+								0.42857142857142855
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 155218681570591,
+				"name": "dinheiro",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			}
+		],
+		"subfolders": []
+	}
+}

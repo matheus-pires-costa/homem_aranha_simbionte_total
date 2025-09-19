@@ -1,7 +1,7 @@
 {
-	"name": "blob",
+	"name": "blob_chave",
 	"plugin-id": "Sprite",
-	"sid": 954144369024313,
+	"sid": 405383200577513,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,24 +10,24 @@
 			"type": "string",
 			"desc": "",
 			"show": true,
-			"sid": 254153641017014
+			"sid": 271124565376615
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
 			"name": "Plataforma",
-			"sid": 232271257406623
+			"sid": 208693662954234
 		},
 		{
 			"behaviorId": "solid",
 			"name": "Sólido",
-			"sid": 348466843541583
+			"sid": 681507764663444
 		},
 		{
 			"behaviorId": "Flash",
 			"name": "Piscar",
-			"sid": 261712355544238
+			"sid": 869211243616023
 		}
 	],
 	"effectTypes": [],
@@ -44,7 +44,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5024811,
+						"imageSpriteId": 1951682,
 						"collisionPoly": {
 							"points": [
 								0.16129032258064518,
@@ -70,7 +70,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 283774,
+						"imageSpriteId": 8532368,
 						"collisionPoly": {
 							"points": [
 								0.16129032258064518,
@@ -96,7 +96,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8679929,
+						"imageSpriteId": 6663440,
 						"collisionPoly": {
 							"points": [
 								0.16129032258064518,
@@ -122,7 +122,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7029938,
+						"imageSpriteId": 8554542,
 						"collisionPoly": {
 							"points": [
 								0.16129032258064518,
@@ -140,7 +140,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 121600436420281,
+				"sid": 467110869906044,
 				"name": "walk",
 				"isLooping": true,
 				"isPingPong": false,

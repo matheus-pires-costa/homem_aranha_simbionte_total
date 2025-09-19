@@ -111,14 +111,13 @@
 			"Teclado",
 			"Gamepad",
 			"jogador",
-			"t_fase1",
 			"fundo1",
 			"fundo2",
 			"fundo3",
 			"fundo4",
 			"portal",
 			"sensor_solido",
-			"blob",
+			"blob_chave",
 			"sensor_blob_dir",
 			"sensor_blob_esq",
 			"inimigo2",
@@ -130,13 +129,26 @@
 			"caixa_de_texto_spider",
 			"background_black",
 			"borda_textos",
-			"FonteDeSprites",
+			"dialogo",
 			"textovida",
 			"chaveGame",
 			"caixa1",
 			"venom",
 			"bomba1",
-			"Áudio"
+			"Áudio",
+			"tutorial",
+			"background_tutorial",
+			"fundoD1",
+			"fundoD2",
+			"fundoD3",
+			"fundoD5",
+			"t_fase1",
+			"blob",
+			"dinheiro",
+			"dinheiro_hud",
+			"dinheiro_texto",
+			"t_fase2",
+			"duendeVerde"
 		],
 		"subfolders": []
 	},
@@ -149,13 +161,15 @@
 	},
 	"layouts": {
 		"items": [
-			"fase1"
+			"fase1",
+			"fase2"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"ePrincipal"
+			"ePrincipal",
+			"efase2"
 		],
 		"subfolders": []
 	},

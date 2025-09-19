@@ -341,8 +341,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1014.4077353653806,
-						"y": 62.25969022266551,
+						"x": 1075.053694792646,
+						"y": -9.836904900656933,
 						"width": 11.06702959339269,
 						"height": 10.329227620499843,
 						"originX": 0.5,
@@ -539,7 +539,7 @@
 					"world": {
 						"x": 0.40498484152021774,
 						"y": 0.8472174279528417,
-						"width": 1019.8845695697996,
+						"width": 1017.764081477937,
 						"height": 206.98803026006743,
 						"originX": 0,
 						"originY": 0,
@@ -729,7 +729,7 @@
 					"type": "portal",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "portal",
+						"initial-animation": "direita",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false

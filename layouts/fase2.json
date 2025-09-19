@@ -2133,8 +2133,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 577.247314453125,
-						"y": -61.229488372802734,
+						"x": 1029,
+						"y": 30,
 						"width": 7,
 						"height": 10,
 						"originX": 0.5,
@@ -2671,7 +2671,7 @@
 					"type": "portal",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "portal",
+						"initial-animation": "esquerda",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2745,6 +2745,58 @@
 							0.5
 						],
 						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "dinheiro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "dinheiro",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 180,
+					"sid": 785829272172125,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Plataforma": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 785829272172125,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1069,
+						"y": 33,
+						"width": 11.06702959339269,
+						"height": 10.329227620499843,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

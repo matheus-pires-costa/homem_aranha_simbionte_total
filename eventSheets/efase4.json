@@ -4,6 +4,121 @@
 		{
 			"eventType": "include",
 			"includeSheet": "ePrincipal"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "venom",
+					"sid": 923471573261247,
+					"parameters": {
+						"animation": "\"dead\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 682807801275756,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 436022822666149,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo",
+					"sid": 904378900497673,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "dialogo",
+					"sid": 739947470858068,
+					"parameters": {
+						"text": "\"Acabou Venom... ainda da tempo Eddie,  a vida e cheia de dor, mas tambem ha amor e beleza...\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 464534761345358,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jogador",
+					"sid": 972212117189075,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 244187723158290,
+					"parameters": {
+						"seconds": "10.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "background_black",
+					"sid": 417375640843051,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "borda_textos",
+					"sid": 499562201557817,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_de_texto_spider",
+					"sid": 683786847105633,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo",
+					"sid": 391408333370236,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jogador",
+					"sid": 960629727147980,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 144897224441486
 		}
 	],
 	"sid": 632082298428671

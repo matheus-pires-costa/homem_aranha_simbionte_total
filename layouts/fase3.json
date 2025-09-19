@@ -2027,7 +2027,7 @@
 					"type": "portal",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "portal",
+						"initial-animation": "esquerda",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2309,6 +2309,159 @@
 						"height": 41.02653807768468,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "chaveGame",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 176,
+					"sid": 456784346667050,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 456784346667050,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 942.5913314163228,
+						"y": -26.535332531004684,
+						"width": 7,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bomba1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "bomba",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 177,
+					"sid": 591953843913696,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Piscar": {
+							"properties": {}
+						},
+						"Plataforma": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Sólido": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						},
+						"DestruirForaDoLayout": {
+							"properties": {}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 591953843913696,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 977.9835815429688,
+						"y": 79.02119445800781,
+						"width": 31.280460716321826,
+						"height": 29.32543192155171,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "dinheiro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "dinheiro",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 181,
+					"sid": 503524600912831,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Plataforma": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 503524600912831,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 998.8036560751759,
+						"y": -27.23505908189523,
+						"width": 11.06702959339269,
+						"height": 10.329227620499843,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

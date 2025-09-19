@@ -56,6 +56,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Vídeo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Âncora",
@@ -166,7 +173,8 @@
 			"fundoFase4pt3",
 			"fundoFase4pt4",
 			"fundoFase4pt5",
-			"t_fase4"
+			"t_fase4",
+			"Vídeo"
 		],
 		"subfolders": []
 	},
@@ -182,7 +190,8 @@
 			"fase1",
 			"fase2",
 			"fase3",
-			"fase4"
+			"fase4",
+			"fim"
 		],
 		"subfolders": []
 	},
@@ -191,7 +200,8 @@
 			"ePrincipal",
 			"efase2",
 			"efase3",
-			"efase4"
+			"efase4",
+			"efim"
 		],
 		"subfolders": []
 	},
@@ -267,7 +277,16 @@
 			"subfolders": []
 		},
 		"video": {
-			"items": [],
+			"items": [
+				{
+					"name": "videofinal.mp4",
+					"type": "video/mp4",
+					"sid": 809753505678165,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"font": {

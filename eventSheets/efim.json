@@ -1,0 +1,30 @@
+{
+	"name": "efim",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 463121006333552
+				}
+			],
+			"actions": [
+				{
+					"id": "set-source-2",
+					"objectClass": "Vídeo",
+					"sid": 610673953978379,
+					"parameters": {
+						"primary-source": "\"videofinal.mp4\"",
+						"primary-format": "mp4-h264",
+						"secondary-source": "\"\"",
+						"secondary-format": "webm-vp9"
+					}
+				}
+			],
+			"sid": 221505240869380
+		}
+	],
+	"sid": 559018311977593
+}

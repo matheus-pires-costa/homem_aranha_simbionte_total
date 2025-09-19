@@ -1,0 +1,56 @@
+{
+	"name": "fundoFase4pt5",
+	"plugin-id": "Sprite",
+	"sid": 121151766253668,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 576,
+						"height": 324,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8406501,
+						"collisionPoly": {
+							"points": [
+								0.2899305555555556,
+								0.6450617283950617,
+								0.9496527777777778,
+								0.7685185185185185,
+								1,
+								0.8580246913580247,
+								1,
+								1,
+								0,
+								1,
+								0.019097222222222224,
+								0.8364197530864198
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 950781855390310,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

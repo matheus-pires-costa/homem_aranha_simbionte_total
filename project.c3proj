@@ -160,7 +160,13 @@
 			"PlanoDeFundoEmBlocos",
 			"PlanoDeFundoEmBlocos2",
 			"PlanoDeFundoEmBlocos3",
-			"carnage"
+			"carnage",
+			"fundoFase4",
+			"fundoFase4pt2",
+			"fundoFase4pt3",
+			"fundoFase4pt4",
+			"fundoFase4pt5",
+			"t_fase4"
 		],
 		"subfolders": []
 	},
